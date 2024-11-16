@@ -54,15 +54,24 @@ Each observation represents a city. The dataset spans multiple years, capturing 
 
 We begin by examining summary statistics for key variables: `dism1990`, `herf`, `lenper`, and poverty rates (`povrate_w`, `povrate_b`). These statistics provide an overview of the distribution and variability of these variables across cities.
 
+<img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/SummaryStatsTable.jpg?raw=true" width="550">
+
+
 ## OLS Regression of Poverty Rates on Segregation
 
-A simple OLS regression is run to explore the relationship between racial segregation (dissimilarity index, `dism1990`) and poverty rates for both White and Black populations.
+A simple OLS regression is run to explore the relationship between racial segregation and poverty rates for both White and Black populations.
+
+
 
 **Regression Model:**
 
 $$
 \text{Poverty Rate (White/Black)} = \beta_0 + \beta_1 \times \text{Segregation} + \epsilon
 $$
+
+<p align="center">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/NonCausalTable.jpg?raw=true" width="450">
+</p>
 
 This model estimates how changes in segregation are associated with changes in poverty rates. However, this approach does not account for potential confounders that could bias the results.
 
@@ -76,15 +85,30 @@ $$
 \text{Segregation (1990)} = \beta_0 + \beta_1 \times \text{RDI} + \beta_2 \times \text{Track Length} + \epsilon
 $$
 
+<p align="center">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/First-stage.jpg?raw=true" width="400" style="display: inline-block; margin-right: 10px;">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Graph.jpg?raw=true" width="475" style="display: inline-block;">
+</p>
+
+
+
 In the first stage, we regress segregation on the instrument(s) to check whether the instruments are significantly correlated with segregation.
 
 ## Assessing Instrument Strength
 
 To assess the strength of the instrument, we examine the F-statistic from the first stage regression. A value greater than 10 indicates a sufficiently strong instrument. If the instrument is weak, IV estimates will be unreliable.
 
+```
+summary(model)$fstat[1]
+```
+
 ## Reduced Form
 
 Next, we estimate the reduced form equation, regressing poverty rates directly on the instrument (RDI and track length), without first modeling segregation. This step helps to understand the relationship between the instrument and the outcomes.
+
+<p align="center">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Graph2.jpg?raw=true" width="475">
+</p>
 
 ## IV Estimation: Second Stage
 
@@ -95,6 +119,11 @@ In the second stage, we regress poverty rates on the predicted values of segrega
 $$
 \text{Poverty Rate (White/Black)} = \alpha_0 + \alpha_1 \times \hat{\text{Segregation}} + \epsilon
 $$
+
+<p align="center">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/IVreg.jpg?raw=true" width="400">
+</p>
+
 
 The coefficient on the predicted segregation variable reflects the causal impact of segregation on poverty, addressing potential biases in the OLS estimate.
 
