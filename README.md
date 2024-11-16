@@ -87,7 +87,7 @@ $$
 
 <p align="center">
   <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/First-stage.jpg?raw=true" width="400" style="display: inline-block; margin-right: 10px;">
-  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Graph.jpg?raw=true" width="475" style="display: inline-block;">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Graph.jpg?raw=true" width="400" style="display: inline-block;">
 </p>
 
 
