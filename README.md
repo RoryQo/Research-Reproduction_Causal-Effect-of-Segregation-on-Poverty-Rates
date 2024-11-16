@@ -1,6 +1,8 @@
-# Reproducing Research: Causal Impact of Segregation on Poverty Rates
+<h2 align="center">Reproducing Research: Causal Impact of Segregation on Poverty Rates</h2>  
 
 This project replicates the analysis from Elizabeth Ananat’s paper, *The Wrong Side(s) of the Tracks: The Causal Effects of Racial Segregation on Urban Poverty and Inequality* (American Economic Journal: Applied Economics, 2011). The study investigates how racial segregation influences urban poverty and inequality, using railroad track layouts as an instrumental variable (IV) to estimate the causal impact of segregation on poverty rates.
+
+[![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://www.aeaweb.org/articles?id=10.1257/app.3.2.34)
 
 ## Table of Contents
 
