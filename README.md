@@ -1,21 +1,36 @@
 <h2 align="center">Reproducing Research: Causal Impact of Segregation on Poverty Rates</h2>  
 
+
+
+<table align="center">
+  <tr>  
+    <td colspan="2" align="center"><strong>Table of Contents</strong></td>  
+  </tr> 
+  <tr>
+    <td>1. <a href="#key-variables">Key Variables</a></td>   
+    <td>5. <a href="#assessing-instrument-strength">Assessing Instrument Strength</a></td>
+  </tr>
+  <tr> 
+    <td>2. <a href="#data-overview">Data Overview</a></td>   
+    <td>6. <a href="#reduced-form">Reduced Form</a></td>
+  </tr>
+  <tr>
+    <td>3. <a href="#summary-statistics">Summary Statistics</a></td>   
+    <td>7. <a href="#iv-estimation-second-stage">IV Estimation: Second Stage</a></td>
+  </tr>
+  <tr>
+    <td>4. <a href="#ols-regression-of-poverty-rates-on-segregation">OLS Regression of Poverty Rates on Segregation</a></td>   
+    <td>8. <a href="#conclusion">Conclusion</a></td>
+  </tr>
+</table>
+
+## Overview
 This project replicates the analysis from Elizabeth Ananat’s paper, *The Wrong Side(s) of the Tracks: The Causal Effects of Racial Segregation on Urban Poverty and Inequality* (American Economic Journal: Applied Economics, 2011). The study investigates how racial segregation influences urban poverty and inequality, using railroad track layouts as an instrumental variable (IV) to estimate the causal impact of segregation on poverty rates.
+
+<br>
 
 [![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://www.aeaweb.org/articles?id=10.1257/app.3.2.34)
 
-## Table of Contents
-
-1. [Key Variables](#key-variables)
-2. [Data Overview](#data-overview)
-3. [Summary Statistics](#summary-statistics)
-4. [OLS Regression of Poverty Rates on Segregation](#ols-regression-of-poverty-rates-on-segregation)
-5. [Addressing Causality: Instrumental Variables Approach](#addressing-causality-instrumental-variables-approach)
-6. [Assessing Instrument Strength](#assessing-instrument-strength)
-7. [Reduced Form](#reduced-form)
-8. [IV Estimation: Second Stage](#iv-estimation-second-stage)
-9. [Testing Robustness](#testing-robustness)
-10. [Conclusion](#conclusion)
 
 ## Key Variables
 
