@@ -29,8 +29,7 @@ This project replicates the analysis from Elizabeth Ananat’s paper, *The Wrong
 
 <br>
 
-[![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0066CC?style=flat&logo=external-link&logoColor=white&color=0066CC)](https://www.aeaweb.org/articles?id=10.1257/app.3.2.34)
-
+ [![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://www.aeaweb.org/articles?id=10.1257/app.3.2.34)
 
 ## Key Variables
 
