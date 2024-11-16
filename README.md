@@ -2,7 +2,7 @@
    
       
   
-<table align="center">
+<table width="80%" align="center">
   <tr>  
     <td colspan="2" align="center"><strong>Table of Contents</strong></td>  
   </tr> 
@@ -22,7 +22,13 @@
     <td>4. <a href="#ols-regression-of-poverty-rates-on-segregation">OLS Regression of Poverty Rates on Segregation</a></td>   
     <td>8. <a href="#conclusion">Conclusion</a></td>
   </tr>
+  <tr>
+    <td colspan="2">9. <a href="#references">References</a></td>   
+  </tr>
 </table>
+
+
+
 
 ## Overview
 This project replicates the analysis from Elizabeth Ananat’s paper, *The Wrong Side(s) of the Tracks: The Causal Effects of Racial Segregation on Urban Poverty and Inequality* (American Economic Journal: Applied Economics, 2011). The study investigates how racial segregation influences urban poverty and inequality, using railroad track layouts as an instrumental variable (IV) to estimate the causal impact of segregation on poverty rates.
@@ -133,3 +139,7 @@ We test the robustness of our results by including additional control variables,
 ## Conclusion
 
 The IV approach provides a more reliable estimate of the causal impact of segregation on poverty rates compared to OLS, addressing endogeneity concerns. By using instruments related to railroad infrastructure, we obtain a clearer understanding of how segregation influences poverty, particularly for Black populations.
+
+## References
+
+Ananat, Elizabeth Oltmans. “The Wrong Side(S) of the Tracks: The Causal Effects of Racial Segregation on Urban Poverty and Inequality.” American Economic Journal: Applied Economics, vol. 3, no. 2, 1 Apr. 2011, pp. 34–66, www.nber.org/system/files/working_papers/w13343/w13343.pdf, https://doi.org/10.1257/app.3.2.34.
