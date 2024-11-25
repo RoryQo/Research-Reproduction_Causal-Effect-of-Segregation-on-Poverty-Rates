@@ -59,7 +59,7 @@ Each observation represents a city. The dataset spans multiple years, capturing 
 
 We begin by examining summary statistics for key variables: `dism1990`, `herf`, `lenper`, and poverty rates (`povrate_w`, `povrate_b`). These statistics provide an overview of the distribution and variability of these variables across cities.
 
-<img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/SummaryStatsTable.jpg?raw=true" width="550">
+<img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/SummaryStatsTable.jpg" width="550">
 
 
 ## OLS Regression of Poverty Rates on Segregation
@@ -75,7 +75,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/NonCausalTable.jpg?raw=true" width="450">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/NonCausalTable.jpg" width="450">
 </p>
 
 This model estimates how changes in segregation are associated with changes in poverty rates. However, this approach does not account for potential confounders that could bias the results.
@@ -91,8 +91,8 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/First-stage.jpg?raw=true" width="340" style="display: inline-block; margin-right: 10px;">
-  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Graph.jpg?raw=true" width="400" style="display: inline-block;">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/First-stage.jpg" width="340" style="display: inline-block; margin-right: 10px;">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/Graph.jpg" width="400" style="display: inline-block;">
 </p>
 
 
@@ -112,7 +112,7 @@ summary(model)$fstat[1]
 Next, we estimate the reduced form equation, regressing poverty rates directly on the instrument (RDI and track length), without first modeling segregation. This step helps to understand the relationship between the instrument and the outcomes.
 
 <p align="center">
-  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Graph2.jpg?raw=true" width="475">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/Graph2.jpg" width="475">
 </p>
 
 ## IV Estimation: Second Stage
@@ -126,7 +126,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/IVreg.jpg?raw=true" width="400">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/IVreg.jpg" width="400">
 </p>
 
 
