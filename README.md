@@ -101,7 +101,7 @@ In the first stage, we regress segregation on the instrument(s) to check whether
 
 ## Assessing Instrument Strength
 
-To assess the strength of the instrument, we examine the F-statistic from the first stage regression. A value greater than 10 indicates a sufficiently strong instrument. If the instrument is weak, IV estimates will be unreliable.
+To assess the strength of the instrument, we examine the F-statistic from the first stage regression. A value greater than 10 indicates a sufficiently strong instrument. If the instrument is weak, IV estimates will be unreliable.  Our model has an F statistic of 14.98.
 
 ```
 summary(model)$fstat[1]
