@@ -82,7 +82,7 @@ This model estimates how changes in segregation are associated with changes in p
 
 ## Addressing Causality: Instrumental Variables Approach
 
-Given that the OLS model may suffer from endogeneity (i.e., omitted variable bias), we apply an instrumental variables (IV) approach to estimate the causal effect of segregation on poverty. The instrument used is the railroad division index (`herf`), with  track length per square kilometer (`lenper`) as a control, RDI is correlated with segregation but assumed not to directly affect poverty rates.
+Given that the OLS model may suffer from endogeneity (i.e., omitted variable bias), we apply an instrumental variables (IV) approach to estimate the causal effect of segregation on poverty. The instrument used is the railroad division index (`herf`), with  track length per square kilometer (`lenper`) as a control, RDI is correlated with segregation but assumed not to directly affect poverty rates, as railroads were laid out randomly or according to transport efficiency before the cities developed.
 
 **First Stage Regression:**
 
