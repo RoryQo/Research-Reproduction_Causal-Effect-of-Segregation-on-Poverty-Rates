@@ -126,7 +126,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/IV.jpg" width="400">
+  <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/IVR.jpg" width="400">
 </p>
 
 
