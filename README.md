@@ -78,7 +78,11 @@ $$
   <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/NonCausalTable.jpg" width="450">
 </p>
 
+
+A one standard deviation increase in the segregation index is associated with a one percentage point decrease in white poverty and a 2.5 percentage point increase in black poverty.
+
 This model estimates how changes in segregation are associated with changes in poverty rates. However, this approach does not account for potential confounders that could bias the results.
+
 
 ## Addressing Causality: Instrumental Variables Approach
 
@@ -98,6 +102,9 @@ $$
 
 
 In the first stage, we regress segregation on the instrument(s) to check whether the instruments are significantly correlated with segregation.
+
+A one standard deviation increase in the RDI is associated
+with a 5 point (0.14 ∗ (0.357) = 0.049) increase in the segregation index.
 
 ## Assessing Instrument Strength
 
