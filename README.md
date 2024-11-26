@@ -132,12 +132,17 @@ $$
 \text{Poverty Rate (White/Black)} = \alpha_0 + \alpha_1 \times \hat{\text{Segregation}} + \epsilon
 $$
 
+```
+ model_BI<-felm(povrate_b~lenper|0|(dism1990~herf+lenper),data=df)
+```
+
 <p align="center">
   <img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/IVO.jpg" width=450px>
 </p>
 
 
-The coefficient on the predicted segregation variable reflects the causal impact of segregation on poverty, addressing potential biases in the OLS estimate.
+The coefficient on the predicted segregation variable reflects the causal impact of segregation on poverty, addressing potential biases in the OLS estimate.  
+The results indicate segregation has a statistically significant *causal* impact on the poverty rates of the black population (increasing segregation induces higher poverty rates among the black population).  The regression also indicates a statistically significant causal impact on the poverty rates among the white population (increasing segregation induces lower poverty rates among the white population).
 
 ## Testing Robustness
 
@@ -145,7 +150,7 @@ We test the robustness of our results by including additional control variables,
 
 ## Conclusion
 
-The IV approach provides a more reliable estimate of the causal impact of segregation on poverty rates compared to OLS, addressing endogeneity concerns. By using instruments related to railroad infrastructure, we obtain a clearer understanding of how segregation influences poverty, particularly for Black populations.
+The IV approach provides a more reliable estimate of the causal impact of segregation on poverty rates compared to OLS, addressing endogeneity concerns. By using instruments related to railroad infrastructure, we obtain a clearer understanding of how segregation influences poverty, particularly for Black populations. The results indicate segregation has a statistically significant *causal* impact on the poverty rates of the black population (increasing segregation induces higher poverty rates among the black population).
 
 Comparing the simple regression 
 
