@@ -485,10 +485,6 @@ stargazer(original_w,new_w,original_b,new_b,se = list( original_w$rse,new_w$rse,
 ```
 
 
-**Answer:**
-
-predicting the segregation (dism1990) first and then regressing those predictions on the poverty lead to the exact same results as out initial instrumental regression with felm as seen in the above table.
-
 \pagebreak
 
 # Yet another IV trick: Taking the "Good" variation and scaling it
