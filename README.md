@@ -53,13 +53,26 @@ This project replicates the analysis from Elizabeth Ananat’s paper, *The Wrong
 
 ## Data Overview
 
+This data is from the AER’s website, which links to the ICPSR’s data repository. Anyone can sign in to access the replication data files.
+
 Each observation represents a city. The dataset spans multiple years, capturing variables related to racial composition, economic outcomes, and urban infrastructure. We focus on the relationships between segregation (measured by the dissimilarity index) and poverty rates among Black and White populations.
+
+[![OpenICPSR Data](https://img.shields.io/badge/OpenICPSR_Data-0056A0)](https://www.openicpsr.org/openicpsr/project/113786/version/V1/view?path=/openicpsr/113786/fcr:versions/V1/data&type=folder)
+
 
 ## Summary Statistics
 
 We begin by examining summary statistics for key variables: `dism1990`, `herf`, `lenper`, and poverty rates (`povrate_w`, `povrate_b`). These statistics provide an overview of the distribution and variability of these variables across cities.
 
-<img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/SummaryStatsTable.jpg" width="550">
+<img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/SummaryStatsTable.jpg" width=650px>
+
+```
+summary_stats <- df %>%  summarise(
+       Mean = colMeans(., na.rm = TRUE),
+          SD = sapply(., sd, na.rm = TRUE),
+             Min = sapply(., min, na.rm = TRUE),
+                Max = sapply(., max, na.rm = TRUE))
+```
 
 
 ## OLS Regression of Poverty Rates on Segregation
