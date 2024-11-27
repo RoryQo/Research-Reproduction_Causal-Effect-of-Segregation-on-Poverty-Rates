@@ -155,6 +155,7 @@ $$
 
 
 The coefficient on the predicted segregation variable reflects the causal impact of segregation on poverty, addressing potential biases in the OLS estimate.  
+
 The results indicate segregation has a statistically significant *causal* impact on the poverty rates of the black population (increasing segregation induces higher poverty rates among the black population).  The regression also indicates a statistically significant causal impact on the poverty rates among the white population (increasing segregation induces lower poverty rates among the white population).
 
 ## Testing Robustness
