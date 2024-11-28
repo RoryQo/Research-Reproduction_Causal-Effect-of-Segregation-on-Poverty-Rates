@@ -64,7 +64,7 @@ Each observation represents a city. The dataset spans multiple years, capturing 
 
 We begin by examining summary statistics for key variables: `dism1990`, `herf`, `lenper`, and poverty rates (`povrate_w`, `povrate_b`). These statistics provide an overview of the distribution and variability of these variables across cities.
 
-<img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/SummaryStatsTable.jpg" width=650px>
+<img src="https://github.com/RoryQo/Research-Reproduction_Causal-Effect-of-Segregation-on-Poverty-Rates/blob/main/Figures/Sum.jpg" width=650px>
 
 ```
 summary_stats <- df %>%  summarise(
