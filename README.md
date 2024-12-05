@@ -1,5 +1,5 @@
 <h2 align="center">Reproducing Research: Causal Impact of Segregation on Poverty Rates</h2>  
-   
+    
         
   
 <table width="80%" align="center">
